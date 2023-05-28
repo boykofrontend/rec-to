@@ -2,8 +2,7 @@
 
 
 ## Before you use available Scripts
-### create `.env` file and ask admin about variables
-### run command `yarn`
+### run command `yarn` to install all modules
 ## Available Scripts
 
 In the project directory, you can run:
