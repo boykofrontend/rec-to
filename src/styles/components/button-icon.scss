@@ -1,0 +1,16 @@
+.custom-btn-icon {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+
+  svg {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  &:hover {
+    svg {
+      fill: $primary-orange;
+    };
+  }
+}

@@ -1,4 +1,5 @@
-export interface IUser {
+export interface ITodo {
   id: string;
-  email: string;
+  description: string;
+  completed: boolean;
 }

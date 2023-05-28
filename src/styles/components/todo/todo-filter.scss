@@ -1,0 +1,62 @@
+.todo-filter {
+  display: flex;
+
+  .radio-button {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 24px 15px 24px 0;
+    height: 20px;
+    cursor: pointer;
+    color: #fff;
+
+    &:focus .label {
+      outline: red 10px solid;
+    }
+
+    .label {
+      padding-left: 32px;
+    }
+
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+
+      &:checked ~ .radio {
+        &::after {
+          display: block;
+        }
+      }
+    }
+
+    .radio {
+      position: absolute;
+      top: -2px;
+      left: 0;
+      width: 24px;
+      height: 24px;
+      background-color: $black;
+      border: 1px solid $dark-grey;
+      border-radius: 50%;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        width: 12px;
+        height: 12px;
+        background-color: $light-blue;
+        border-radius: 50%;
+        display: none;
+      }
+    }
+
+    &-title {
+      font-size: 32px;
+      line-height: 38px;
+      margin-bottom: 16px;
+    }
+  }
+}
